@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DevOps Engineer</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./src/js/physics-motion.js" defer></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold text-google-text">Ishan Phogat</span>
+                </div>
+                <div class="hidden sm:flex space-x-8">
+                    <a href="#about" class="text-google-subtext hover:text-google-blue transition-colors">About</a>
+                    <a href="#skills" class="text-google-subtext hover:text-google-blue transition-colors">Skills</a>
+                    <a href="#experience"
+                        class="text-google-subtext hover:text-google-blue transition-colors">Experience</a>
+                    <a href="#projects"
+                        class="text-google-subtext hover:text-google-blue transition-colors">Projects</a>
+                    <a href="#contact" class="text-google-subtext hover:text-google-blue transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center px-4 relative">
+        <div class="max-w-6xl mx-auto text-center z-10">
+            <h1 class="text-6xl md:text-8xl font-bold text-google-text mb-8 tracking-tight hero-title">
+                Hello, I'm <span class="text-google-blue">Ishan Phogat</span>
+            </h1>
+            <p class="text-2xl md:text-4xl text-google-subtext mb-12 max-w-4xl mx-auto hero-subtitle">
+                DevOps Engineer Specializing in CI/CD, AWS, Docker, Kubernetes, Automation, Infrastructure. Building
+                Reliable & Scalable System </p>
+            <div class="flex justify-center gap-4">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+                <a href="[INSERT_GOOGLE_DRIVE_LINK_HERE]" target="_blank" class="btn-outline">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-google-subtext leading-relaxed text-center">
+                <p>
+                    With 1 year of professional experience as a DevOps Engineer and a Bachelor of Technology in Computer
+                    and Communication Engineering from The LNM Institute of Information Technology,
+                    I have built a strong foundation in modern DevOps practices. Over the past year, I’ve worked on
+                    designing and maintaining efficient CI/CD pipelines, improving software and platform architecture,
+                    and collaborating closely with development teams to streamline delivery processes. My hands-on
+                    experience has strengthened my ability to automate workflows, enhance system reliability, and
+                    contribute effectively to a fast-paced engineering environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cloud Platforms -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-blue">Cloud Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">AWS (EC2, S3, IAM,
+                            Lambda, VPC)</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">CloudWatch</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">CloudFormation</span>
+                    </div>
+                </div>
+                <!-- IaC & Automation -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-red">IaC & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Terraform</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Bash</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">YAML</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Ansible</span>
+                    </div>
+                </div>
+                <!-- Containerization & Orchestration -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-yellow">Containerization</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Docker</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Kubernetes
+                            (EKS)</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Helm basics</span>
+                    </div>
+                </div>
+                <!-- CI/CD Tools -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-green">CI/CD Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">GitHub Actions</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Jenkins</span>
+                    </div>
+                </div>
+                <!-- Operating Systems -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-blue">Operating Systems</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Linux</span>
+                    </div>
+                </div>
+                <!-- Networking -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-red">Networking</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">TCP/IP</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">DNS</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Load Balancers</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">VPN</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Routing &
+                            Firewalls</span>
+                    </div>
+                </div>
+                <!-- Monitoring & Logging -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-yellow">Monitoring & Logging</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">CloudWatch</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Grafana</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Prometheus</span>
+                    </div>
+                </div>
+                <!-- Version Control -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-green">Version Control</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Git</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">GitHub</span>
+                    </div>
+                </div>
+                <!-- Scripting & Programming -->
+                <div class="card">
+                    <h3 class="font-semibold text-lg mb-4 text-google-blue">Scripting & Programming</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Bash</span>
+                        <span class="px-3 py-1 bg-gray-100 rounded-full text-sm text-google-text">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <!-- Experience Item 1 -->
+                <div class="relative pl-8 border-l-2 border-google-blue">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-google-blue"></div>
+                    <div class="mb-1 text-sm text-google-blue font-semibold">November 2024 – Present</div>
+                    <h3 class="text-xl font-bold text-google-text">Cloud Engineer</h3>
+                    <div class="text-google-subtext font-medium mb-4">Infinite Computer Solutions | Remote</div>
+                    <ul class="list-disc list-inside text-google-subtext space-y-2">
+                        <li>Designed and deployed AWS infrastructure using Terraform, managing VPCs, subnets, EC2, IAM,
+                            and S3 with modular Terraform templates.</li>
+                        <li>Automated server provisioning and configuration using Bash scripts, reducing manual
+                            deployment time by 40%.</li>
+                        <li>Containerized microservices with Docker and integrated them into development pipelines for
+                            consistent environments across stages.</li>
+                        <li>Collaborated with DevOps and Security teams to optimize cloud costs, achieving 20% reduction
+                            in monthly spend.</li>
+                        <li>Centralized logs/metrics/traces with Prometheus, Grafana, Loki reducing MTTR significantly.
+                        </li>
+                        <li>Implemented CI/CD pipelines using GitHub Actions to automate code integration, testing, and
+                            deployments.</li>
+                        <li>Provided day-to-day operational support, ensuring 99.9% uptime of production systems.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="relative pl-8 border-l-2 border-gray-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200"></div>
+                    <div class="mb-1 text-sm text-google-subtext font-semibold">June 2024 – October 2024</div>
+                    <h3 class="text-xl font-bold text-google-text">DevOps Engineer Intern</h3>
+                    <div class="text-google-subtext font-medium mb-4">Skewb Analytics | Gurugram, Haryana</div>
+                    <ul class="list-disc list-inside text-google-subtext space-y-2">
+                        <li>Developed and implemented Jenkins CI/CD pipelines, streamlining the software development
+                            lifecycle and enhancing deployment efficiency.</li>
+                        <li>Gained hands-on experience with Linux systems, optimizing server configurations and
+                            troubleshooting issues to maintain high availability and performance.</li>
+                        <li>Collaborated with the development team to understand and document software architecture,
+                            contributing to design discussions and architecture reviews.</li>
+                        <li>Containerized the application and uploaded to Docker Hub which can be used for deployment
+                            using Kubernetes or any other tool.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://github.com/Ishanphogat17/Ishanphogat17-codecrafters-shell-python" target="_blank"
+                    class="block group">
+                    <div class="card h-full">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">Python Shell
+                            Implementation</h3>
+                        <p class="text-google-subtext mb-4">A custom POSIX-compliant shell built in Python. Features
+                            include built-in commands (cd, pwd, echo), command history, I/O redirection, piping, and tab
+                            autocompletion.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Python</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">SysAdmin</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 2 -->
+                <a href="#" class="block group">
+                    <div class="card h-full">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">[Project Name]
+                        </h3>
+                        <p class="text-google-subtext mb-4">[Short description of project and your role.]</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span
+                                class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Terraform</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Jenkins</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="section-title">Education</h2>
+            <div class="max-w-2xl mx-auto">
+                <div>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-lg">B.tech in Computer and Communication Engineering</h4>
+                        <p class="text-google-subtext">The LNM Institute of Technology,Jaipur [2020-2024]</p>
+                    </div>
+                </div>
+                <!-- Certifications Section (Hidden) -->
+                <!--
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-google-text">Certifications</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-google-green mr-2 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-google-subtext">[Certification Name]</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-google-green mr-2 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-google-subtext">[Certification Name]</span>
+                        </li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="text-xl text-google-subtext mb-10">
+                Interested in working together? Feel free to reach out.
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="mailto:ishanphogat61@gmail.com" class="btn-primary" target="_self">
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/ishan-phogat-779183218/" target="_blank" class="btn-outline bg-white">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 text-center text-google-subtext text-sm">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
