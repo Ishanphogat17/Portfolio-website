@@ -45,7 +45,8 @@
                 Reliable & Scalable System </p>
             <div class="flex justify-center gap-4">
                 <a href="#contact" class="btn-primary">Contact Me</a>
-                <a href="[INSERT_GOOGLE_DRIVE_LINK_HERE]" target="_blank" class="btn-outline">View Resume</a>
+                <a href="https://drive.google.com/file/d/1jkUlwob226NE8mraU8Gxna5ss94HTIxm/view?usp=sharing"
+                    target="_blank" class="btn-outline">View Resume</a>
             </div>
         </div>
     </section>
@@ -56,7 +57,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="max-w-3xl mx-auto text-lg text-google-subtext leading-relaxed text-center">
                 <p>
-                    With 1 year of professional experience as a DevOps Engineer and a Bachelor of Technology in Computer
+                    With 2 years of professional experience as a DevOps Engineer and a Bachelor of Technology in Computer
                     and Communication Engineering from The LNM Institute of Information Technology,
                     I have built a strong foundation in modern DevOps practices. Over the past year, I’ve worked on
                     designing and maintaining efficient CI/CD pipelines, improving software and platform architecture,
@@ -167,7 +168,33 @@
                 <!-- Experience Item 1 -->
                 <div class="relative pl-8 border-l-2 border-google-blue">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-google-blue"></div>
-                    <div class="mb-1 text-sm text-google-blue font-semibold">November 2024 – Present</div>
+                    <div class="mb-1 text-sm text-google-blue font-semibold">Feb 2026 – Present</div>
+                    <h3 class="text-xl font-bold text-google-text">DevOps Engineer</h3>
+                    <div class="text-google-subtext font-medium mb-4">Monkhub Innovation | Gurugram, Haryana</div>
+                    <ul class="list-disc list-inside text-google-subtext space-y-2">
+                        <li>Managed and automated a fleet of production Linux servers — provisioning with Terraform, plus
+                            patching and backups via AWS Systems Manager (SSM), eliminating manual SSH-based operations.
+                        </li>
+                        <li>Architected end-to-end observability for an AI Voice Agent platform using Prometheus,
+                            Grafana, Node Exporter, Blackbox Exporter, and AWS CloudWatch dashboards and alarms,
+                            achieving 99.9% uptime visibility across all production services.</li>
+                        <li>Deployed and managed containerized microservices on a Kubernetes cluster (EKS), including
+                            Deployments, Services, and ConfigMaps/Secrets for environment configuration.</li>
+                        <li>Administered Nginx and Apache webservers and SSL/TLS certificates (Certbot, Cloudflare)
+                            across multiple production domains; designed multi-environment (Dev/Staging/Prod) workflows
+                            with automated rollback, reducing failed production deployments by 50%.</li>
+                        <li>Centralized credential management by migrating application secrets to AWS Secrets Manager and
+                            HashiCorp Vault, removing hardcoded secrets from servers and pipelines; integrated Trivy
+                            vulnerability scanning into CI/CD as a security gate.</li>
+                        <li>Established disaster-recovery baseline: automated PostgreSQL and MySQL/RDS backups to S3 with
+                            per-database prefixes, documented restore runbooks, and maintained infrastructure
+                            documentation with a strong operational ownership mindset.</li>
+                    </ul>
+                </div>
+                <!-- Experience Item 2 -->
+                <div class="relative pl-8 border-l-2 border-gray-200">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200"></div>
+                    <div class="mb-1 text-sm text-google-subtext font-semibold">November 2024 – Present</div>
                     <h3 class="text-xl font-bold text-google-text">Cloud Engineer</h3>
                     <div class="text-google-subtext font-medium mb-4">Infinite Computer Solutions | Remote</div>
                     <ul class="list-disc list-inside text-google-subtext space-y-2">
@@ -186,7 +213,7 @@
                         <li>Provided day-to-day operational support, ensuring 99.9% uptime of production systems.</li>
                     </ul>
                 </div>
-                <!-- Experience Item 2 -->
+                <!-- Experience Item 3 -->
                 <div class="relative pl-8 border-l-2 border-gray-200">
                     <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-200"></div>
                     <div class="mb-1 text-sm text-google-subtext font-semibold">June 2024 – October 2024</div>
@@ -212,30 +239,51 @@
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="section-title">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://github.com/Ishanphogat17/Ishanphogat17-codecrafters-shell-python" target="_blank"
-                    class="block group">
+                <!-- Project 1 -->
+                <a href="#" class="block group">
                     <div class="card h-full">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">Python Shell
-                            Implementation</h3>
-                        <p class="text-google-subtext mb-4">A custom POSIX-compliant shell built in Python. Features
-                            include built-in commands (cd, pwd, echo), command history, I/O redirection, piping, and tab
-                            autocompletion.</p>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">GitOps-Driven
+                            Kubernetes Deployment with ArgoCD</h3>
+                        <ul class="list-disc list-inside text-google-subtext space-y-2 mb-4">
+                            <li>Implemented a GitOps workflow using ArgoCD on AWS EKS, enabling fully declarative,
+                                Git-driven deployments for multiple microservices — eliminating manual kubectl apply
+                                steps and reducing deployment errors.</li>
+                            <li>Packaged services as Helm charts with environment-specific value overrides
+                                (dev/staging/prod), achieving consistent multi-environment deployments and cutting
+                                config-related release failures.</li>
+                        </ul>
                         <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Python</span>
-                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">SysAdmin</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Terraform</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">AWS</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">ArgoCD</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Kubernetes
+                                (EKS)</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Helm</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">GitHub
+                                Actions</span>
                         </div>
                     </div>
                 </a>
                 <!-- Project 2 -->
                 <a href="#" class="block group">
                     <div class="card h-full">
-                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">[Project Name]
-                        </h3>
-                        <p class="text-google-subtext mb-4">[Short description of project and your role.]</p>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-google-blue transition-colors">Zero-Touch
+                            CI/CD & IaC Deployment Pipeline</h3>
+                        <ul class="list-disc list-inside text-google-subtext space-y-2 mb-4">
+                            <li>Built a zero-touch pipeline using GitHub Actions and Terraform that provisions AWS
+                                infrastructure and deploys a Dockerized Node.js app on every push to main, reducing
+                                manual deployment steps to zero.</li>
+                            <li>Implemented remote Terraform state management with S3 backend and DynamoDB state
+                                locking, preventing concurrent deployment conflicts across multi-developer workflows.
+                            </li>
+                        </ul>
                         <div class="flex flex-wrap gap-2 mt-auto">
-                            <span
-                                class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Terraform</span>
-                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Jenkins</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">GitHub
+                                Actions</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Terraform</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Docker</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">AWS (EC2, S3,
+                                DynamoDB)</span>
                         </div>
                     </div>
                 </a>
@@ -299,12 +347,6 @@
             </div>
         </div>
     </section>
-
-    <footer class="py-8 border-t border-gray-200">
-        <div class="max-w-6xl mx-auto px-4 text-center text-google-subtext text-sm">
-            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-        </div>
-    </footer>
 
 </body>
 
